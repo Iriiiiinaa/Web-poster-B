@@ -8,6 +8,13 @@
 @font-face {
     font-family: "Arimo-Bold";
     src: url("../fonts/Arimo-Bold.ttf") format("truetype");
-    font-style: boldl;
+    font-style: bold;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "ABC-trial";
+    src: url("../fonts/ABCGravityCyrillic-Expanded-Trial.otf");
+    font-style: bold;
     font-weight: bold;
 }

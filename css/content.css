@@ -1,5 +1,162 @@
 body{
     background-color: #323144;
     width: 100%;
-    overflow-x: hidden;
+    overflow: hidden;
+}
+
+.square{
+    position: absolute;
+    width: 7.8vw;
+    height: 2.4vw;
+    rotate: -90deg;
+    margin-top: 5.2vw;
+    margin-left: 0.3vw;
+}
+.text{
+    font-size: 1.35vw;
+    font-family: "ABC-trial";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2.15vw;
+    color:#323144;
+}
+.box{
+    position: absolute;
+    width: 1.95vw;
+    height: 1.95vw;
+    background-color: #FE6807;
+    border: 0.17vw solid #323144;
+
+}
+.box1{
+    position: absolute;
+    width: 1.95vw;
+    height: 1.95vw;
+    background-color: #FE6807;
+    border: 0.17vw solid #323144;
+    margin-left: 30%;
+
+}
+.box2{
+    position: absolute;
+    width: 1.95vw;
+    height: 1.95vw;
+    background-color: #FE6807;
+    border: 0.17vw solid #323144;
+    margin-left: 60%;
+}
+.square1{
+    position: absolute;
+    width: 13vw;
+    height: 2.4vw;
+    margin-top: 3.35vw;
+    margin-left: 84.5vw;
+}
+.box3{
+    position: absolute;
+    width: 1.95vw;
+    height: 1.95vw;
+    background-color: #FE6807;
+    border: 0.17vw solid #323144;
+}
+.box4{
+    position: absolute;
+    width: 1.95vw;
+    height: 1.95vw;
+    background-color: #FE6807;
+    border: 0.17vw solid #323144;
+    margin-left: 25%;
+
+}
+.box5{
+    position: absolute;
+    width: 1.95vw;
+    height: 1.95vw;
+    background-color: #FE6807;
+    border: 0.17vw solid #323144;
+    margin-left: 43%;
+}
+.box6{
+    position: absolute;
+    width: 1.95vw;
+    height: 1.95vw;
+    background-color: #FE6807;
+    border: 0.17vw solid #323144;
+    margin-left: 61%;
+}
+.box7{
+    position: absolute;
+    width: 1.95vw;
+    height: 1.95vw;
+    background-color: #FE6807;
+    border: 0.17vw solid #323144;
+    margin-left: 79%;
+}
+.square2{
+    position: absolute;
+    width: 9vw;
+    height: 2.4vw;
+    margin-top: 53vw;
+    margin-left: 87.75vw;
+}
+.box8{
+    position: absolute;
+    width: 1.95vw;
+    height: 1.95vw;
+    background-color: #FE6807;
+    border: 0.17vw solid #323144;
+}
+.box9{
+    position: absolute;
+    width: 1.95vw;
+    height: 1.95vw;
+    background-color: #FE6807;
+    border: 0.17vw solid #323144;
+    margin-left: 26%;
+}
+.box10{
+    position: absolute;
+    width: 1.95vw;
+    height: 1.95vw;
+    background-color: #FE6807;
+    border: 0.17vw solid #323144;
+    margin-left: 52%;
+}
+.box11{
+    position: absolute;
+    width: 1.95vw;
+    height: 1.95vw;
+    background-color: #FE6807;
+    border: 0.17vw solid #323144;
+    margin-left: 78%;
+}
+.text1{
+    position: absolute;
+    margin-top: 3.4vw;
+    margin-left: 6.5vw;
+    font-size: 1.7vw;
+    font-family: "Arimo-Bold";
+    height: 2.15vw;
+    color:#FE6807;
+}
+.text2{
+    position: absolute;
+    margin-top: 6.5vw;
+    margin-left: 6.5vw;
+    font-size: 1.05vw;
+    font-family: "Arimo-Regular";
+    height: 2.15vw;
+    color:#FE6807;
+    line-height: 1.2vw;
+}
+.text3{
+    position: absolute;
+    margin-top: 51.75vw;
+    margin-left: 3.1vw;
+    font-size: 1.05vw;
+    font-family: "Arimo-Regular";
+    height: 2.15vw;
+    color:#FE6807;
+    line-height: 1.2vw;
 }
