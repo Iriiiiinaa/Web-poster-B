@@ -1,5 +1,5 @@
 body{
-    background-color: #ad7900;
+    background-color: #323144;
     width: 100%;
     overflow: hidden;
 }
@@ -141,6 +141,15 @@ body{
     height: 2.15vw;
     color:#FE6807;
 }
+.text7{
+    position: absolute;
+    margin-top: 3.3vw;
+    margin-left: 6.1vw;
+    font-size: 1.7vw;
+    font-family: "Arimo-Bold";
+    height: 2.15vw;
+    color:#323144;
+}
 .text2{
     position: absolute;
     margin-top: 6.4vw;
@@ -149,6 +158,16 @@ body{
     font-family: "Arimo-Regular";
     height: 2.15vw;
     color:#FE6807;
+    line-height: 1.2vw;
+}
+.text8{
+    position: absolute;
+    margin-top: 6.4vw;
+    margin-left: 6.1vw;
+    font-size: 1.05vw;
+    font-family: "Arimo-Regular";
+    height: 2.15vw;
+    color:#323144;
     line-height: 1.2vw;
 }
 .text3{
@@ -269,7 +288,7 @@ body{
     font-size: 1.05vw;
     font-family: "Arimo-Regular";
     height: 2.15vw;
-    color:#07fe66;
+    color:#323144;
     line-height: 1.2vw;
 }
 .square3{
@@ -283,7 +302,7 @@ body{
 .text6{
     position: absolute;
     margin-top: 51.9vw;
-    margin-left: 60vw;
+    margin-left: 76.3vw;
     font-size: 1.05vw;
     font-family: "Arimo-Regular";
     height: 2.15vw;
@@ -294,8 +313,8 @@ body{
     position: absolute;
     width: 12vw;
     height: 2.4vw;
-    margin-top: 46.6vw;
-    margin-left: -2vw;
+    margin-top: 44.5vw;
+    margin-left: 89.91vw;
     rotate: 90deg;
 }
 .box12{
@@ -336,4 +355,26 @@ body{
     background-color: #FE6807;
     border: 0.115vw solid #323144;
     margin-left: 9.2vw;
+}
+.square5{
+    position: absolute;
+    width: 9vw;
+    height: 2.4vw;
+    margin-top: 3.36vw;
+    margin-left: 88.24vw;
+}
+.square6{
+    position: absolute;
+    width: 4.4vw;
+    height: 2.4vw;
+    margin-top: 3.36vw;
+    margin-left: 82.7vw;
+}
+.card{
+    background-color: #EEF5DB;
+    position: absolute;
+    width: 15vw;
+    height: 6vw;
+    margin-top: 3.36vw;
+    margin-left: 4vw;
 }
