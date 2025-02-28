@@ -1,19 +1,19 @@
 body{
-    background-color: #323144;
+    background-color: #ad7900;
     width: 100%;
     overflow: hidden;
 }
 
 .square{
     position: absolute;
-    width: 7.8vw;
+    width: 7.5vw;
     height: 2.4vw;
     rotate: -90deg;
-    margin-top: 5.2vw;
+    margin-top: 4.95vw;
     margin-left: 0.3vw;
 }
 .text{
-    font-size: 1.35vw;
+    font-size: 1.38vw;
     font-family: "ABC-trial";
     display: flex;
     justify-content: center;
@@ -23,118 +23,119 @@ body{
 }
 .box{
     position: absolute;
-    width: 1.95vw;
-    height: 1.95vw;
+    width: 1.9vw;
+    height: 1.9vw;
     background-color: #FE6807;
-    border: 0.15vw solid #323144;
+    border: 0.115vw solid #323144;
 
 }
 .box1{
     position: absolute;
-    width: 1.95vw;
-    height: 1.95vw;
+    width: 1.9vw;
+    height: 1.9vw;
     background-color: #FE6807;
-    border: 0.15vw solid #323144;
+    border: 0.115vw solid #323144;
     margin-left: 30%;
 
 }
 .box2{
     position: absolute;
-    width: 1.95vw;
-    height: 1.95vw;
+    width: 1.9vw;
+    height: 1.9vw;
     background-color: #FE6807;
-    border: 0.15vw solid #323144;
+    border: 0.115vw solid #323144;
     margin-left: 60%;
 }
 .square1{
     position: absolute;
-    width: 13vw;
+    width: 12.8vw;
     height: 2.4vw;
-    margin-top: 3.35vw;
-    margin-left: 84.5vw;
+    margin-top: 3.36vw;
+    margin-left: 85vw;
 }
 .box3{
     position: absolute;
-    width: 1.95vw;
-    height: 1.95vw;
+    width: 1.9vw;
+    height: 1.9vw;
     background-color: #FE6807;
-    border: 0.15vw solid #323144;
+    border: 0.115vw solid #323144;
+    margin-left: 1%;
 }
 .box4{
     position: absolute;
-    width: 1.95vw;
-    height: 1.95vw;
+    width: 1.9vw;
+    height: 1.9vw;
     background-color: #FE6807;
-    border: 0.15vw solid #323144;
-    margin-left: 25%;
+    border: 0.115vw solid #323144;
+    margin-left: 25.7%;
 
 }
 .box5{
     position: absolute;
-    width: 1.95vw;
-    height: 1.95vw;
+    width: 1.9vw;
+    height: 1.9vw;
     background-color: #FE6807;
-    border: 0.15vw solid #323144;
-    margin-left: 43%;
+    border: 0.115vw solid #323144;
+    margin-left: 43.4%;
 }
 .box6{
     position: absolute;
-    width: 1.95vw;
-    height: 1.95vw;
+    width: 1.9vw;
+    height: 1.9vw;
     background-color: #FE6807;
-    border: 0.15vw solid #323144;
-    margin-left: 61%;
+    border: 0.115vw solid #323144;
+    margin-left: 60.95%;
 }
 .box7{
     position: absolute;
-    width: 1.95vw;
-    height: 1.95vw;
+    width: 1.9vw;
+    height: 1.9vw;
     background-color: #FE6807;
-    border: 0.15vw solid #323144;
-    margin-left: 79%;
+    border: 0.115vw solid #323144;
+    margin-left: 78.5%;
 }
 .square2{
     position: absolute;
     width: 9vw;
     height: 2.4vw;
-    margin-top: 53vw;
-    margin-left: 87.75vw;
+    margin-top: 53.2vw;
+    margin-left: 88.3vw;
 }
 .box8{
     position: absolute;
-    width: 1.95vw;
-    height: 1.95vw;
+    width: 1.9vw;
+    height: 1.9vw;
     background-color: #FE6807;
-    border: 0.15vw solid #323144;
+    border: 0.115vw solid #323144;
 }
 .box9{
     position: absolute;
-    width: 1.95vw;
-    height: 1.95vw;
+    width: 1.9vw;
+    height: 1.9vw;
     background-color: #FE6807;
-    border: 0.15vw solid #323144;
-    margin-left: 26%;
+    border: 0.115vw solid #323144;
+    margin-left: 25.5%;
 }
 .box10{
     position: absolute;
-    width: 1.95vw;
-    height: 1.95vw;
+    width: 1.9vw;
+    height: 1.9vw;
     background-color: #FE6807;
-    border: 0.15vw solid #323144;
-    margin-left: 52%;
+    border: 0.115vw solid #323144;
+    margin-left: 50.6%;
 }
 .box11{
     position: absolute;
-    width: 1.95vw;
-    height: 1.95vw;
+    width: 1.9vw;
+    height: 1.9vw;
     background-color: #FE6807;
-    border: 0.15vw solid #323144;
-    margin-left: 78%;
+    border: 0.115vw solid #323144;
+    margin-left: 76%;
 }
 .text1{
     position: absolute;
-    margin-top: 3.4vw;
-    margin-left: 6.3vw;
+    margin-top: 3.3vw;
+    margin-left: 6.1vw;
     font-size: 1.7vw;
     font-family: "Arimo-Bold";
     height: 2.15vw;
@@ -142,8 +143,8 @@ body{
 }
 .text2{
     position: absolute;
-    margin-top: 6.5vw;
-    margin-left: 6.3vw;
+    margin-top: 6.4vw;
+    margin-left: 6.1vw;
     font-size: 1.05vw;
     font-family: "Arimo-Regular";
     height: 2.15vw;
@@ -152,8 +153,8 @@ body{
 }
 .text3{
     position: absolute;
-    margin-top: 51.75vw;
-    margin-left: 3.1vw;
+    margin-top: 51.9vw;
+    margin-left: 2.8vw;
     font-size: 1.05vw;
     font-family: "Arimo-Regular";
     height: 2.15vw;
@@ -162,40 +163,49 @@ body{
 }
 .buttun{
     position: absolute;
-    margin-top: 6.7vw;
-    margin-left: 89.29vw;
+    margin-top: 6.6vw;
+    margin-left: 89.64vw;
     width: 8vw;
     height: 2.7vw;
 }
-.pagge{
+.button_bck{
     position: absolute;
-    width: 2.25vw;
-    height: 2.25vw;
+    width: 2vw;
+    height: 2vw;
     background-color: #FE6807;
-    border: 0.15vw solid #323144;
-    margin-left: 0vw;
+    border: 0.115vw solid #323144;
+    margin-left: 0.087vw;
     cursor: pointer;
 }
-.pagge1{
+.button_back{
     position: absolute;
-    width: 2.25vw;
-    height: 2.25vw;
+    width: 2vw;
+    height: 2vw;
     background-color: #FE6807;
-    border: 0.15vw solid #323144;
-    margin-left: 2.35vw;
+    border: 0.115vw solid #323144;
+    margin-left: 0.087vw;
+    cursor: pointer;
+}
+.button_sectionfirst{
+    position: absolute;
+    width: 2vw;
+    height: 2vw;
+    background-color: #FE6807;
+    border: 0.115vw solid #323144;
+    margin-left: 2.3vw;
     cursor: pointer;
 }
 .pagge2{
     position: absolute;
-    width: 2.25vw;
-    height: 2.25vw;
+    width: 2vw;
+    height: 2vw;
     background-color: #FE6807;
-    border: 0.15vw solid #323144;
-    margin-left: 5.5vw;
+    border: 0.115vw solid #323144;
+    margin-left: 5.48vw;
     cursor: pointer;
 }
 .text4{
-    font-size: 1.35vw;
+    font-size: 1.4vw;
     font-family: "ABC-trial";
     display: flex;
     justify-content: center;
@@ -203,18 +213,127 @@ body{
     height: 2vw;
     color:#323144;
 }
-.page{
+
+
+
+.sectionnone {
     display: none;
-}
-.page.active{
-    display: block;
 }
 
 
 
 .back{
+    position: absolute;
     background-color: #FE6807;
     width: 100%;
-    height: 40vw;
-    margin-top: 10vw;
+    height: 100%;
+}
+.buttun1{
+    position: absolute;
+    margin-top: 6.6vw;
+    margin-left: 89.64vw;
+    width: 8vw;
+    height: 2.7vw;
+}
+.pagge3{
+    position: absolute;
+    width: 2vw;
+    height: 2vw;
+    background-color: #FE6807;
+    border: 0.115vw solid #323144;
+    margin-left: 0vw;
+    cursor: pointer;
+}
+.pagge4{
+    position: absolute;
+    width: 2vw;
+    height: 2vw;
+    background-color: #FE6807;
+    border: 0.115vw solid #323144;
+    margin-left: 2.3vw;
+    cursor: pointer;
+}
+.pagge5{
+    position: absolute;
+    width: 2vw;
+    height: 2vw;
+    background-color: #FE6807;
+    border: 0.115vw solid #323144;
+    margin-left: 5.48vw;
+    cursor: pointer;
+}
+.text5{
+    position: absolute;
+    margin-top: 53.05vw;
+    margin-left: 2.8vw;
+    font-size: 1.05vw;
+    font-family: "Arimo-Regular";
+    height: 2.15vw;
+    color:#07fe66;
+    line-height: 1.2vw;
+}
+.square3{
+    position: absolute;
+    width: 9vw;
+    height: 2.4vw;
+    margin-top: 46.6vw;
+    margin-left: -0.45vw;
+    rotate: -90deg;
+}
+.text6{
+    position: absolute;
+    margin-top: 51.9vw;
+    margin-left: 60vw;
+    font-size: 1.05vw;
+    font-family: "Arimo-Regular";
+    height: 2.15vw;
+    color:#323144;
+    line-height: 1.2vw;
+}
+.square4{
+    position: absolute;
+    width: 12vw;
+    height: 2.4vw;
+    margin-top: 46.6vw;
+    margin-left: -2vw;
+    rotate: 90deg;
+}
+.box12{
+    position: absolute;
+    width: 1.9vw;
+    height: 1.9vw;
+    background-color: #FE6807;
+    border: 0.115vw solid #323144;
+}
+.box13{
+    position: absolute;
+    width: 1.9vw;
+    height: 1.9vw;
+    background-color: #FE6807;
+    border: 0.115vw solid #323144;
+    margin-left: 2.3vw;
+}
+.box14{
+    position: absolute;
+    width: 1.9vw;
+    height: 1.9vw;
+    background-color: #FE6807;
+    border: 0.115vw solid #323144;
+    margin-left: 4.6vw;
+}
+.box15{
+    position: absolute;
+    width: 1.9vw;
+    height: 1.9vw;
+    background-color: #FE6807;
+    border: 0.115vw solid #323144;
+    margin-left: 6.9vw;
+}
+.box16{
+    position: absolute;
+    width: 1.9vw;
+    height: 1.9vw;
+    background-color: #FE6807;
+    border: 0.115vw solid #323144;
+    margin-left: 9.2vw;
 }
