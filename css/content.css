@@ -205,7 +205,7 @@ body{
     margin-left: 0.087vw;
     cursor: pointer;
 }
-.button_sectionfirst{
+.button_section1{
     position: absolute;
     width: 2vw;
     height: 2vw;
@@ -235,7 +235,7 @@ body{
 
 
 
-.sectionnone {
+.sectionnn {
     display: none;
 }
 
@@ -263,7 +263,7 @@ body{
     margin-left: 0vw;
     cursor: pointer;
 }
-.pagge4{
+.button_section3{
     position: absolute;
     width: 2vw;
     height: 2vw;
@@ -372,9 +372,116 @@ body{
 }
 .card{
     background-color: #EEF5DB;
+    border: 0.115vw solid #323144;
     position: absolute;
-    width: 15vw;
-    height: 6vw;
-    margin-top: 3.36vw;
-    margin-left: 4vw;
+    width: 52vw;
+    height: 30vw;
+    margin-top: 15vw;
+    margin-left: 11vw;
+}
+.log{
+    position: absolute;
+    width: 51.8%;
+    margin-top: 2vw;
+    margin-left: 1.25vw;
+}
+.log img{
+    width: 51.8%;
+    border: 0.115vw solid #323144;
+}
+#dropArea{
+    background-color: #FE6807;
+    border: 0.115vw solid #323144;
+    position: absolute;
+    width: 14vw;
+    height: 18.8vw;
+    margin-top: 6.2vw;
+    margin-left: 1.25vw;
+    cursor: pointer;
+}
+#previewImage {
+    max-width: 200px;
+    max-height: 200px;
+    display: none; /* Скрываем до загрузки */
+    object-fit: cover;
+  }
+.square7{
+    position: absolute;
+    width: 14vw;
+    height: 2.4vw;
+    margin-top: 25.8vw;
+    margin-left: 1.25vw;
+}
+.box17{
+    position: absolute;
+    width: 2.7vw;
+    height: 1.9vw;
+    background-color: #FE6807;
+    border: 0.115vw solid #323144;
+}
+.box18{
+    position: absolute;
+    width: 1.9vw;
+    height: 1.9vw;
+    background-color: #FE6807;
+    border: 0.115vw solid #323144;
+    margin-left: 3.08vw;
+}
+.box19{
+    position: absolute;
+    width: 1.9vw;
+    height: 1.9vw;
+    background-color: #FE6807;
+    border: 0.115vw solid #323144;
+    margin-left: 5.33vw;
+}
+.box20{
+    position: absolute;
+    width: 1.9vw;
+    height: 1.9vw;
+    background-color: #FE6807;
+    border: 0.115vw solid #323144;
+    margin-left: 7.6vw;
+}
+.box21{
+    position: absolute;
+    width: 1.9vw;
+    height: 1.9vw;
+    background-color: #FE6807;
+    border: 0.115vw solid #323144;
+    margin-left: 9.85vw;
+}
+.box22{
+    position: absolute;
+    width: 1.9vw;
+    height: 1.9vw;
+    background-color: #FE6807;
+    border: 0.115vw solid #323144;
+    margin-left: 12.09vw;
+}
+.liner{
+    border: 0.015vw solid #323144;
+    position: absolute;
+    height: 25.8vw;
+    margin-left: 16.6vw;
+    margin-top: 2vw;
+}
+.text9{
+    position: absolute;
+    margin-top: 2vw;
+    margin-left: 17.8vw;
+    font-size: 1.7vw;
+    font-family: "Arimo-Bold";
+    height: 2.15vw;
+    color:#323144;
+}
+.text10{
+    position: absolute;
+    margin-top: 3.8vw;
+    margin-left: 17.8vw;
+    font-size: 1.05vw;
+    font-family: "Arimo-Regular";
+    height: 2.15vw;
+    color:#323144;
+    line-height: 1.2vw;
 }
