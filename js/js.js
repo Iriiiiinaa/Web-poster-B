@@ -45,7 +45,4 @@ document.addEventListener('DOMContentLoaded', () => {
   showSection('section2');
 
 
-
-
-
 });

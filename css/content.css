@@ -485,3 +485,62 @@ body{
     color:#323144;
     line-height: 1.2vw;
 }
+.text11{
+    position: absolute;
+    margin-top: 7.8vw;
+    margin-left: 17.8vw;
+    font-size: 1.7vw;
+    font-family: "Arimo-Regular";
+    height: 2.15vw;
+    color:#323144;
+    line-height: 1.2vw;
+}
+.text12{
+    position: absolute;
+    margin-top: 10.7vw;
+    margin-left: 17.8vw;
+    font-size: 1.7vw;
+    font-family: "Arimo-Regular";
+    height: 2.15vw;
+    color:#323144;
+    line-height: 1.2vw;
+}
+.text13{
+    position: absolute;
+    margin-top: 13.6vw;
+    margin-left: 17.8vw;
+    font-size: 1.7vw;
+    font-family: "Arimo-Regular";
+    height: 2.15vw;
+    color:#323144;
+    line-height: 1.2vw;
+}
+.text14{
+    position: absolute;
+    margin-top: 16.5vw;
+    margin-left: 17.8vw;
+    font-size: 1.7vw;
+    font-family: "Arimo-Regular";
+    height: 2.15vw;
+    color:#323144;
+    line-height: 1.2vw;
+}
+.text15{
+    position: absolute;
+    margin-top: 19.4vw;
+    margin-left: 17.8vw;
+    font-size: 1.7vw;
+    font-family: "Arimo-Regular";
+    height: 2.15vw;
+    color:#323144;
+    line-height: 1.2vw;
+}
+.drawing{
+    position: absolute;
+    width: 25vw;
+    height: 3.8vw;
+    border: 0.115vw solid #323144;
+    margin-left: 17.8vw;
+    margin-top: 24vw;
+    cursor: crosshair;
+}
