@@ -535,12 +535,34 @@ body{
     color:#323144;
     line-height: 1.2vw;
 }
-.drawing{
+#myCanvas{
     position: absolute;
-    width: 25vw;
-    height: 3.8vw;
+    width: 250px;
+    height: 380px;
     border: 0.115vw solid #323144;
     margin-left: 17.8vw;
     margin-top: 24vw;
     cursor: crosshair;
 }
+
+.text-input-container {
+    border: 1px solid black;
+    padding: 10vw; /*  Уменьшил паддинг, 100px много */
+    width: 200px;
+    background-color: rgb(255, 0, 0); /* Красный фон для контейнера */
+}
+
+.text-input-container input {
+    font-size: 1.7vw;
+    background-color: white;
+    color: black;
+    border: none;
+    outline: none;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.text-input-container:hover {
+    cursor: text;
+  }
