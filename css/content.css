@@ -3,7 +3,7 @@ body{
     width: 100%;
     overflow: hidden;
 }
-
+/* первый экран*/
 .square{
     position: absolute;
     width: 7.5vw;
@@ -232,14 +232,11 @@ body{
     height: 2vw;
     color:#323144;
 }
-
-
-
 .sectionnn {
     display: none;
 }
 
-
+/* второй экран*/
 
 .back{
     position: absolute;
@@ -375,7 +372,7 @@ body{
     border: 0.115vw solid #323144;
     position: absolute;
     width: 52vw;
-    height: 30vw;
+    height: 28.8vw;
     margin-top: 15vw;
     margin-left: 11vw;
 }
@@ -389,27 +386,48 @@ body{
     width: 51.8%;
     border: 0.115vw solid #323144;
 }
-#dropArea{
+#dropArea {
     background-color: #FE6807;
     border: 0.115vw solid #323144;
     position: absolute;
     width: 14vw;
-    height: 18.8vw;
+    height: 17.6vw;
     margin-top: 6.2vw;
     margin-left: 1.25vw;
     cursor: pointer;
+    overflow: hidden;
+    z-index: 1;
+    display: flex;         /* Используем flexbox для центрирования */
+    justify-content: center; /* Центрирование по горизонтали */
+    align-items: center;     /* Центрирование по вертикали */
 }
-#previewImage {
-    max-width: 200px;
-    max-height: 200px;
-    display: none; /* Скрываем до загрузки */
+
+#dropArea img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
-  }
+    position: absolute;      /* Для перекрытия default-image */
+    top: 0;
+    left: 0;
+}
+
+#file-input {
+    display: none;
+}
+
+.default-image {
+    width: 51.8%;         /* Ширина картинки */
+    z-index: 2;             /* Чтобы отображалась поверх фона dropArea */
+    position: relative;       /* Убираем absolute, чтобы не вылезала за пределы dropArea */
+}
+
+
+
 .square7{
     position: absolute;
-    width: 14vw;
+    width: 13.6vw;
     height: 2.4vw;
-    margin-top: 25.8vw;
+    margin-top: 24.6vw;
     margin-left: 1.25vw;
 }
 .box17{
@@ -487,9 +505,9 @@ body{
 }
 .text11{
     position: absolute;
-    margin-top: 7.8vw;
+    margin-top: 7.4vw;
     margin-left: 17.8vw;
-    font-size: 1.7vw;
+    font-size: 1.6vw;
     font-family: "Arimo-Regular";
     height: 2.15vw;
     color:#323144;
@@ -497,9 +515,9 @@ body{
 }
 .text12{
     position: absolute;
-    margin-top: 10.7vw;
+    margin-top: 10.1vw;
     margin-left: 17.8vw;
-    font-size: 1.7vw;
+    font-size: 1.6vw;
     font-family: "Arimo-Regular";
     height: 2.15vw;
     color:#323144;
@@ -507,9 +525,9 @@ body{
 }
 .text13{
     position: absolute;
-    margin-top: 13.6vw;
+    margin-top: 12.8vw;
     margin-left: 17.8vw;
-    font-size: 1.7vw;
+    font-size: 1.6vw;
     font-family: "Arimo-Regular";
     height: 2.15vw;
     color:#323144;
@@ -517,9 +535,9 @@ body{
 }
 .text14{
     position: absolute;
-    margin-top: 16.5vw;
+    margin-top: 15.5vw;
     margin-left: 17.8vw;
-    font-size: 1.7vw;
+    font-size: 1.6vw;
     font-family: "Arimo-Regular";
     height: 2.15vw;
     color:#323144;
@@ -527,34 +545,34 @@ body{
 }
 .text15{
     position: absolute;
-    margin-top: 19.4vw;
+    margin-top: 18.2vw;
     margin-left: 17.8vw;
-    font-size: 1.7vw;
+    font-size: 1.6vw;
     font-family: "Arimo-Regular";
     height: 2.15vw;
     color:#323144;
     line-height: 1.2vw;
 }
-#myCanvas{
+.yu{
     position: absolute;
-    width: 250px;
-    height: 385px;
+    width: 500px;
+    height: 83px;
     border: 0.115vw solid #323144;
     margin-left: 17.8vw;
-    margin-top: 24vw;
+    margin-top: 21.6vw;
     cursor: crosshair;
 }
 
-.text-input-container {
-    border: 1px solid black;
-    padding: 10vw; /*  Уменьшил паддинг, 100px много */
-    width: 200px;
-    background-color: rgb(255, 0, 0); /* Красный фон для контейнера */
+.text1conteiner {
+    margin-top: 5.3vw;
+    margin-left: 24.5vw;
+    padding: 2vw;
+    width: 10vw;
 }
 
-.text-input-container input {
+.text1conteiner input {
     font-size: 1.7vw;
-    background-color: white;
+    background-color: #a38aff;
     color: black;
     border: none;
     outline: none;
@@ -563,6 +581,16 @@ body{
     padding: 0;
     margin: 0;
 }
-.text-input-container:hover {
+
+.text1conteiner:hover {
     cursor: text;
-  }
+}
+.box23{
+    position: absolute;
+    width: 10vw;
+    height: 8vw;
+    border: 0.115vw solid #323144;
+    margin-left: 70vw;
+    margin-top: 15vw;
+    cursor: pointer;
+}

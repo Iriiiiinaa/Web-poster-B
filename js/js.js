@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const buttons = document.querySelectorAll('button');
+//кнопки
+    const buttons = document.querySelectorAll('button');
   // аргумент название = применятеся ко всему в документе с <button>
   const section = document.querySelectorAll('div[class^="section"]');
 
@@ -45,11 +46,14 @@ document.addEventListener('DOMContentLoaded', () => {
   showSection('section2');
 
 
-  function createTextInput(containerId, maxLength = 20) {
-    const container = document.getElementById(containerId);
+
+
+//начало ввода текста
+  function createTextInput(text1cont, maxLength = 5) {
+    const container = document.getElementById(text1cont);
 
     if (!container) {
-        console.error(`Контейнер с id "${containerId}" не найден.`);
+        console.error(`Контейнер с id "${text1cont}" не найден.`);
         return;
     }
 
@@ -91,23 +95,41 @@ document.addEventListener('DOMContentLoaded', () => {
         blur: () => inputElement.blur()
     };
 }
-
-
 window.onload = () => {
     // ЗАДАЙТЕ МАКСИМАЛЬНОЕ КОЛИЧЕСТВО СИМВОЛОВ ЗДЕСЬ:
-    createTextInput("myTextInputContainer", 20); // Максимум 5 символов
+    createTextInput("text1cont", 5); // Максимум 5 символов
 };
 
-    //  Чтобы получить текущий текст:
-    //  const currentText = inputField.getText();
 
-    //  Чтобы установить текст программно:
-    //  inputField.setText("Привет!");
+//загразка фотки с рабочего стола
+const uploadDiv = document.getElementById('dropArea');
+const fileInput = document.getElementById('file-input');
+const uploadedImage = document.getElementById('uploaded-image');
+const defaultImage = document.querySelector('.default-image'); // Исправленный селектор
 
-    // Чтобы установить фокус на текстовое поле:
-    // inputField.focus();
+uploadDiv.addEventListener('click', function() {
+    fileInput.click();
+});
 
-    // Чтобы снять фокус с текстового поля:
-    // inputField.blur();
+fileInput.addEventListener('change', function() {
+    const file = fileInput.files[0];
+
+    if (file) {
+        const reader = new FileReader();
+
+        reader.addEventListener('load', function() {
+            uploadedImage.src = reader.result;
+            uploadedImage.style.display = 'block';
+            defaultImage.style.display = 'none';
+        });
+
+        reader.readAsDataURL(file);
+    } else {
+        uploadedImage.src = "";
+        uploadedImage.style.display = 'none';
+        defaultImage.style.display = 'block';
+    }
+});
+
 
 });
