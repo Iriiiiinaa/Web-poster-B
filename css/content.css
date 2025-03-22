@@ -976,3 +976,319 @@ background-color: #EEF5DB;
 .building5 img{
     width: 33.6%;
 }
+
+/*section 4*/
+.buttun3{
+    position: absolute;
+    margin-top: 6.6vw;
+    margin-left: 89.64vw;
+    width: 8vw;
+    height: 2.7vw;
+    z-index: 2;
+}
+.button_backkk{
+    position: absolute;
+    width: 2vw;
+    height: 2vw;
+    background-color: #FE6807;
+    border: 0.115vw solid #323144;
+    margin-left: 0.087vw;
+    cursor: pointer;
+}
+.button_section4{
+    position: absolute;
+    width: 2vw;
+    height: 2vw;
+    background-color: #FE6807;
+    border: 0.115vw solid #323144;
+    margin-left: 2.3vw;
+    cursor: pointer;
+}
+.pagge7{
+    position: absolute;
+    width: 2vw;
+    height: 2vw;
+    background-color: #FE6807;
+    border: 0.115vw solid #323144;
+    margin-left: 5.48vw;
+    cursor: pointer;
+}
+.fence{
+    position: absolute;
+    width: 107.5%;
+    margin-top: -30vw;
+    margin-left: -9.5vw;
+    z-index: 1;
+}
+.fence img{
+    width: 107.5%;
+}
+.text19{
+    position: absolute;
+    margin-top: 3.3vw;
+    margin-left: 80.3vw;
+    font-size: 1.7vw;
+    font-family: "Arimo-Bold";
+    height: 2.15vw;
+    z-index: 2;
+    color:#FE6807;
+}
+.box35{
+    position: absolute;
+    width: 13.85vw;
+    height: 52.9vw;
+    margin-top: 2.8vw;
+    margin-left: 3vw;
+    z-index: 3;
+    background-color: #323144;;
+}
+.square12{
+    position: absolute;
+    width: 12vw;
+    height: 2.4vw;
+    margin-top: 4.85vw;
+    margin-left: 4.3vw;
+    z-index: 3;
+}
+.square13{
+    position: absolute;
+    width: 12.8vw;
+    height: 2.4vw;
+    margin-top: 7.3vw;
+    margin-left: 12.9vw;
+    z-index: 2;
+    rotate: -90deg;
+}
+.square14{
+    position: absolute;
+    width: 9vw;
+    height: 2.4vw;
+    margin-top: 50vw;
+    margin-left: 14.8vw;
+    z-index: 3;
+    rotate: -90deg;
+}
+.text20{
+    position: absolute;
+    margin-top: 52.35vw;
+    margin-left: 21.4vw;
+    font-size: 1.05vw;
+    font-family: "Arimo-Regular";
+    height: 2.15vw;
+    color:#FE6807;
+    line-height: 1.2vw;
+    z-index: 2;
+}
+.square15{
+    position: absolute;
+    width: 7.5vw;
+    height: 2.4vw;
+    margin-top: 51.7vw;
+    margin-left: 92.15vw;
+    rotate: 90deg;
+    z-index: 2;
+}
+
+/* section5*/
+.buttun4{
+    position: absolute;
+    margin-top: 6.6vw;
+    margin-left: 89.64vw;
+    width: 8vw;
+    height: 2.7vw;
+    z-index: 2;
+}
+.button_backkkk{
+    position: absolute;
+    width: 2vw;
+    height: 2vw;
+    background-color: #FE6807;
+    border: 0.115vw solid #323144;
+    margin-left: 0.087vw;
+    cursor: pointer;
+}
+.button_section5{
+    position: absolute;
+    width: 2vw;
+    height: 2vw;
+    background-color: #FE6807;
+    border: 0.115vw solid #323144;
+    margin-left: 2.3vw;
+    cursor: pointer;
+}
+.pagge8{
+    position: absolute;
+    width: 2vw;
+    height: 2vw;
+    background-color: #FE6807;
+    border: 0.115vw solid #323144;
+    margin-left: 5.48vw;
+    cursor: pointer;
+}
+.back1{
+    position: absolute;
+    background-color: #FE6807;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.text21{
+    position: absolute;
+    margin-top: 3.3vw;
+    margin-left: 82.95vw;
+    font-size: 1.7vw;
+    font-family: "Arimo-Bold";
+    height: 2.15vw;
+    z-index: 2;
+    color:#323144;
+}
+.square16{
+    position: absolute;
+    width: 7.5vw;
+    height: 2.4vw;
+    rotate: -90deg;
+    margin-top: 4.95vw;
+    margin-left: 0.3vw;
+    z-index: 2;
+}
+.text22{
+    position: absolute;
+    margin-top: 3.3vw;
+    margin-left: 6.1vw;
+    font-size: 1.7vw;
+    font-family: "Arimo-Bold";
+    height: 2.15vw;
+    color:#323144;
+    z-index: 2;
+}
+.text23{
+    position: absolute;
+    margin-top: 6.4vw;
+    margin-left: 6.1vw;
+    font-size: 1.05vw;
+    font-family: "Arimo-Regular";
+    height: 2.15vw;
+    color:#323144;
+    line-height: 1.2vw;
+    z-index: 2;
+}
+.square17{
+    position: absolute;
+    width: 9vw;
+    height: 2.4vw;
+    margin-top: 49.6vw;
+    margin-left: -0.45vw;
+    z-index: 3;
+    rotate: -90deg;
+}
+.square18{
+    position: absolute;
+    width: 7.5vw;
+    height: 2.4vw;
+    rotate: -90deg;
+    margin-top: 42.5vw;
+    margin-left: 0.3vw;
+    z-index: 2;
+}
+.text24{
+    position: absolute;
+    margin-top: 53.15vw;
+    margin-left: 6.1vw;
+    font-size: 1.05vw;
+    font-family: "Arimo-Regular";
+    height: 2.15vw;
+    color:#323144;
+    line-height: 1.2vw;
+    z-index: 2;
+}
+.square19{
+    position: absolute;
+    width: 7.5vw;
+    height: 2.4vw;
+    margin-top: 51.7vw;
+    margin-left: 92.15vw;
+    rotate: 90deg;
+    z-index: 2;
+}
+.text25{
+    position: absolute;
+    margin-top: 54.4vw;
+    margin-left: 77.8vw;
+    font-size: 1.05vw;
+    font-family: "Arimo-Regular";
+    height: 2.15vw;
+    color:#323144;
+    line-height: 1.2vw;
+    z-index: 2;
+}
+.laptop{
+    position: absolute;
+    overflow: hidden;
+    width: 26vw;
+    height: 17vw;
+    margin-top: 4.5vw;
+    margin-left: 6.2vw;
+    z-index: 2;
+    border: 0.115vw solid #323144;
+}
+.box36{
+    position: absolute;
+    background-color: #323144;
+    width: 100%;
+    height: 3vw;
+    z-index: 1;
+    border: 0.115vw solid #323144;
+}
+.text26{
+    position: absolute;
+    margin-top: 0.7vw;
+    margin-left: 0.7vw;
+    font-size: 1.7vw;
+    font-family: "Arimo-Bold";
+    height: 2.15vw;
+    color:#EEF5DB;
+    z-index: 2;
+}
+.square20{
+    position: absolute;
+    width: 7.5vw;
+    height: 2.4vw;
+    margin-top: 0.5vw;
+    margin-left: 18.5vw;
+    z-index: 2;
+}
+.boxx{
+    position: absolute;
+    width: 1.9vw;
+    height: 1.9vw;
+    border: 0.115vw solid #EEF5DB;
+    margin-left: 30%;
+
+}
+.boxxx{
+    position: absolute;
+    width: 1.9vw;
+    height: 1.9vw;
+    border: 0.115vw solid #EEF5DB;
+    margin-left: 60%;
+}
+.text27{
+    position: absolute;
+    margin-top: -0.5vw;
+    margin-left: 0.33vw;
+    font-size: 1.7vw;
+    font-family: "ABC-trial";
+    height: 2.15vw;
+    color:#EEF5DB;
+    z-index: 2;
+}
+.text28{
+    position: absolute;
+    margin-top: 0.1vw;
+    margin-left: 0.25vw;
+    font-size: 1.7vw;
+    font-family: "ABC-trial";
+    height: 2.15vw;
+    color:#EEF5DB;
+    z-index: 2;
+}

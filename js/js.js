@@ -28,7 +28,12 @@ document.addEventListener('DOMContentLoaded', () => {
             showSection('section1'); // Показываем раздел 1
         } else if (button.classList.contains('button_backk')) {
             showSection('section2'); // Показываем раздел 2
-        }
+        } else if (button.classList.contains('button_backkk')) {
+          showSection('section3'); // Показываем раздел 2
+      }
+      else if (button.classList.contains('button_backkkk')) {
+        showSection('section4'); // Показываем раздел 2
+    }
         // Обработка обычных кнопок переключения страниц
           else {
               if (button.classList.contains('button_section1')) {
@@ -37,13 +42,18 @@ document.addEventListener('DOMContentLoaded', () => {
                   showSection('section3');
               } else if (button.classList.contains('button_section3')) {
                 showSection('section4');
+               } else if (button.classList.contains('button_section4')) {
+                  showSection('section5');
             }
+            else if (button.classList.contains('button_section5')) {
+              showSection('section5');
+        }
           }
       });
   });
 
   // Показываем первый раздел при загрузке страницы
-  showSection('section3');
+  showSection('section5');
 
 
 
