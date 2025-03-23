@@ -236,24 +236,22 @@ body{
     margin-left: 50vw;
     rotate: -6.6deg;
     width: 57%;
-    z-index: 1;
 }
 .chek img{
     width: 57%;
     cursor: grab;
-    pointer-events: none; 
+    pointer-events: none;
 }
 .title1{
     position: absolute;
     margin-top: 26vw;
     margin-left: 2vw;
     width: 90%;
-    z-index: 1;
 }
 .title1 img{
     width: 90%;
     cursor: grab;
-    pointer-events: none; 
+    pointer-events: none;
 }
 .title2{
     position: absolute;
@@ -261,7 +259,6 @@ body{
     margin-left: 38vw;
     rotate: -2.5deg;
     width: 72%;
-    z-index: 1;
 
 }
 .title2 img{
@@ -1221,8 +1218,7 @@ background-color: #EEF5DB;
     line-height: 1.2vw;
     z-index: 2;
 }
-.laptop{
-    position: absolute;
+.laptop {
     overflow: hidden;
     width: 26vw;
     height: 17vw;
@@ -1230,6 +1226,9 @@ background-color: #EEF5DB;
     margin-left: 6.2vw;
     z-index: 2;
     border: 0.115vw solid #323144;
+    cursor: move;
+    user-select: none;
+    position: absolute;
 }
 .box36{
     position: absolute;
@@ -1261,21 +1260,24 @@ background-color: #EEF5DB;
     position: absolute;
     width: 1.9vw;
     height: 1.9vw;
+    background-color: #323144;
     border: 0.115vw solid #EEF5DB;
+    cursor: pointer;
     margin-left: 30%;
-
 }
 .boxxx{
     position: absolute;
     width: 1.9vw;
     height: 1.9vw;
     border: 0.115vw solid #EEF5DB;
+    cursor: pointer;
+    background-color: #323144;
     margin-left: 60%;
 }
 .text27{
     position: absolute;
-    margin-top: -0.5vw;
-    margin-left: 0.33vw;
+    margin-top: -1.69vw;
+    margin-left: 0.15vw;
     font-size: 1.7vw;
     font-family: "ABC-trial";
     height: 2.15vw;
@@ -1284,11 +1286,24 @@ background-color: #EEF5DB;
 }
 .text28{
     position: absolute;
-    margin-top: 0.1vw;
-    margin-left: 0.25vw;
+    margin-top: -1.1vw;
+    margin-left: 0.1vw;
     font-size: 1.7vw;
     font-family: "ABC-trial";
     height: 2.15vw;
     color:#EEF5DB;
     z-index: 2;
 }
+.mem{
+    margin-top: 3vw;
+    width: 100%;
+}
+.mem img{
+    width: 100%;
+}
+#memImage {
+    pointer-events: none;
+    user-select: none;
+    -webkit-user-select: none; /* Для Safari */
+  }
+  

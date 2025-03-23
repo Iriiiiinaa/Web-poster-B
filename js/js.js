@@ -125,7 +125,79 @@ const uploadDiv = document.getElementById('dropArea');
         defaultImage.style.display = 'block';
       }
     });
+    
+//экраны на последнем
+const laptop = document.querySelector('.laptop');
+const memImage = document.getElementById('memImage');
+const boxx = document.querySelector('.boxx');
+const boxxx = document.querySelector('.boxxx');
+
+// Обработчик для boxx (скрытие/показ ноутбука и картинки)
+boxx.addEventListener('click', () => {
+  const isHidden = laptop.style.border === 'none'; // Проверяем, скрыт ли border (изначально его нет)
+
+  laptop.style.border = isHidden ? '2px solid black' : 'none';
+  memImage.style.display = isHidden ? 'block' : 'none';
+});
 
 
+// Обработчик для boxxx (скрытие ноутбука)
+boxxx.addEventListener('click', () => {
+  laptop.style.display = 'none';
+});
+
+//iiii
+let draggableElements = document.querySelectorAll(".laptop");
+
+draggableElements.forEach(function (element) {
+    let isDragging = false;
+    let offsetX, offsetY;
+    let initialMarginLeft, initialMarginTop; // Храним исходные margin
+
+    element.addEventListener("mousedown", function (event) {
+        event.preventDefault();
+        isDragging = true;
+
+        // Получаем исходные значения margin
+        initialMarginLeft = parseFloat(getComputedStyle(element).marginLeft) || 0;
+        initialMarginTop = parseFloat(getComputedStyle(element).marginTop) || 0;
+
+        // Получаем размеры и положение элемента
+        const rect = element.getBoundingClientRect();
+
+        // Учитываем margin при вычислении offsetX и offsetY
+        offsetX = event.clientX - rect.left + initialMarginLeft;
+        offsetY = event.clientY - rect.top + initialMarginTop;
+
+        // Устанавливаем absolute позиционирование и убираем margin
+        element.style.position = 'absolute';
+
+        // Устанавливаем текущее положение, учитывая margin
+        element.style.left = (rect.left - initialMarginLeft) + 'px';
+        element.style.top = (rect.top - initialMarginTop) + 'px';
+
+        function onMouseMove(event) {
+            if (isDragging) {
+                let x = event.clientX - offsetX;
+                let y = event.clientY - offsetY;
+
+                element.style.left = x + "px";
+                element.style.top = y + "px";
+            }
+        }
+
+        function onMouseUp() {
+            isDragging = false;
+            document.removeEventListener("mousemove", onMouseMove);
+            document.removeEventListener("mouseup", onMouseUp);
+
+            // Оставляем элемент с position: absolute.
+        }
+
+        document.addEventListener("mousemove", onMouseMove);
+        document.addEventListener("mouseup", onMouseUp);
+    });
+});
 
 });
+
