@@ -233,12 +233,15 @@ body{
 .chek{
     position: absolute;
     margin-top: 4vw;
-    margin-left: 50vw;
+    margin-left: 48vw;
     rotate: -6.6deg;
-    width: 57%;
+    width: 35%;
+    height: auto;
 }
 .chek img{
-    width: 57%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     cursor: grab;
     pointer-events: none;
 }
@@ -246,24 +249,30 @@ body{
     position: absolute;
     margin-top: 26vw;
     margin-left: 2vw;
-    width: 90%;
+    width: 82%;
+    height: auto;
 }
 .title1 img{
-    width: 90%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     cursor: grab;
     pointer-events: none;
 }
 .title2{
     position: absolute;
     margin-top: 39vw;
-    margin-left: 38vw;
+    margin-left: 35vw;
     rotate: -2.5deg;
-    width: 72%;
-
+    width: 56%;
+    height: auto;
 }
 .title2 img{
-    width: 72%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     cursor: grab;
+    pointer-events: none;
 }
 .sectionnn {
     display: none;
@@ -1218,15 +1227,14 @@ background-color: #EEF5DB;
     line-height: 1.2vw;
     z-index: 2;
 }
-.laptop {
+.laptop{
     overflow: hidden;
     width: 26vw;
     height: 17vw;
-    margin-top: 4.5vw;
-    margin-left: 6.2vw;
+    margin-top: 7vw;
+    margin-left: 23vw;
     z-index: 2;
     border: 0.115vw solid #323144;
-    cursor: move;
     user-select: none;
     position: absolute;
 }
@@ -1301,9 +1309,291 @@ background-color: #EEF5DB;
 .mem img{
     width: 100%;
 }
-#memImage {
-    pointer-events: none;
+.laptop1 {
+    overflow: hidden;
+    width: 26vw;
+    height: 17vw;
+    margin-top: 10.5vw;
+    margin-left: 5vw;
+    z-index: 2;
+    border: 0.115vw solid #323144;
     user-select: none;
-    -webkit-user-select: none; /* Для Safari */
-  }
-  
+    position: absolute;
+}
+.boxx1{
+    position: absolute;
+    width: 1.9vw;
+    height: 1.9vw;
+    background-color: #323144;
+    border: 0.115vw solid #EEF5DB;
+    cursor: pointer;
+    margin-left: 30%;
+}
+.boxxx1{
+    position: absolute;
+    width: 1.9vw;
+    height: 1.9vw;
+    border: 0.115vw solid #EEF5DB;
+    cursor: pointer;
+    background-color: #323144;
+    margin-left: 60%;
+}
+.mem1{
+    margin-top: 3vw;
+    width: 100%;
+}
+.mem1 img{
+    width: 100%;
+}
+.laptop2 {
+    overflow: hidden;
+    width: 26vw;
+    height: 17vw;
+    margin-top: 29vw;
+    margin-left: 56vw;
+    z-index: 2;
+    border: 0.115vw solid #323144;
+    user-select: none;
+    position: absolute;
+}
+.boxx2{
+    position: absolute;
+    width: 1.9vw;
+    height: 1.9vw;
+    background-color: #323144;
+    border: 0.115vw solid #EEF5DB;
+    cursor: pointer;
+    margin-left: 30%;
+}
+.boxxx2{
+    position: absolute;
+    width: 1.9vw;
+    height: 1.9vw;
+    border: 0.115vw solid #EEF5DB;
+    cursor: pointer;
+    background-color: #323144;
+    margin-left: 60%;
+}
+.mem2{
+    margin-top: 3vw;
+    width: 100%;
+}
+.mem2 img{
+    width: 100%;
+}
+.laptop3 {
+    overflow: hidden;
+    width: 26vw;
+    height: 17vw;
+    margin-top: 40vw;
+    margin-left: 34vw;
+    z-index: 2;
+    border: 0.115vw solid #323144;
+    user-select: none;
+    position: absolute;
+}
+.boxx3{
+    position: absolute;
+    width: 1.9vw;
+    height: 1.9vw;
+    background-color: #323144;
+    border: 0.115vw solid #EEF5DB;
+    cursor: pointer;
+    margin-left: 30%;
+}
+.boxxx3{
+    position: absolute;
+    width: 1.9vw;
+    height: 1.9vw;
+    border: 0.115vw solid #EEF5DB;
+    cursor: pointer;
+    background-color: #323144;
+    margin-left: 60%;
+}
+.mem3{
+    margin-top: 3vw;
+    width: 100%;
+}
+.mem3 img{
+    width: 100%;
+}
+.laptop4 {
+    overflow: hidden;
+    width: 26vw;
+    height: 17vw;
+    margin-top: 36vw;
+    margin-left: 11vw;
+    z-index: 2;
+    border: 0.115vw solid #323144;
+    user-select: none;
+    position: absolute;
+}
+.boxx4{
+    position: absolute;
+    width: 1.9vw;
+    height: 1.9vw;
+    background-color: #323144;
+    border: 0.115vw solid #EEF5DB;
+    cursor: pointer;
+    margin-left: 30%;
+}
+.boxxx4{
+    position: absolute;
+    width: 1.9vw;
+    height: 1.9vw;
+    border: 0.115vw solid #EEF5DB;
+    cursor: pointer;
+    background-color: #323144;
+    margin-left: 60%;
+}
+.mem4{
+    margin-top: 3vw;
+    width: 100%;
+}
+.mem4 img{
+    width: 100%;
+}
+.laptop5 {
+    overflow: hidden;
+    width: 26vw;
+    height: 17vw;
+    margin-top: 24vw;
+    margin-left: 69vw;
+    z-index: 2;
+    border: 0.115vw solid #323144;
+    user-select: none;
+    position: absolute;
+}
+.boxx5{
+    position: absolute;
+    width: 1.9vw;
+    height: 1.9vw;
+    background-color: #323144;
+    border: 0.115vw solid #EEF5DB;
+    cursor: pointer;
+    margin-left: 30%;
+}
+.boxxx5{
+    position: absolute;
+    width: 1.9vw;
+    height: 1.9vw;
+    border: 0.115vw solid #EEF5DB;
+    cursor: pointer;
+    background-color: #323144;
+    margin-left: 60%;
+}
+.mem5{
+    margin-top: 3vw;
+    width: 100%;
+}
+.mem5 img{
+    width: 100%;
+}
+.laptop6 {
+    overflow: hidden;
+    width: 26vw;
+    height: 17vw;
+    margin-top: 5.3vw;
+    margin-left: 58vw;
+    z-index: 2;
+    border: 0.115vw solid #323144;
+    user-select: none;
+    position: absolute;
+}
+.boxx6{
+    position: absolute;
+    width: 1.9vw;
+    height: 1.9vw;
+    background-color: #323144;
+    border: 0.115vw solid #EEF5DB;
+    cursor: pointer;
+    margin-left: 30%;
+}
+.boxxx6{
+    position: absolute;
+    width: 1.9vw;
+    height: 1.9vw;
+    border: 0.115vw solid #EEF5DB;
+    cursor: pointer;
+    background-color: #323144;
+    margin-left: 60%;
+}
+.mem6{
+    margin-top: 3vw;
+    width: 100%;
+}
+.mem6 img{
+    width: 100%;
+}
+.laptop7 {
+    overflow: hidden;
+    width: 26vw;
+    height: 17vw;
+    margin-top: 32vw;
+    margin-left: 18vw;
+    z-index: 2;
+    border: 0.115vw solid #323144;
+    user-select: none;
+    position: absolute;
+}
+.boxx7{
+    position: absolute;
+    width: 1.9vw;
+    height: 1.9vw;
+    background-color: #323144;
+    border: 0.115vw solid #EEF5DB;
+    cursor: pointer;
+    margin-left: 30%;
+}
+.boxxx7{
+    position: absolute;
+    width: 1.9vw;
+    height: 1.9vw;
+    border: 0.115vw solid #EEF5DB;
+    cursor: pointer;
+    background-color: #323144;
+    margin-left: 60%;
+}
+.mem7{
+    margin-top: 3vw;
+    width: 100%;
+}
+.mem7 img{
+    width: 100%;
+}
+.you{
+    position: absolute;
+    pointer-events: none;
+    margin-top: 11vw;
+    margin-left: 10vw;
+    rotate: -6.6deg;
+    width: 31%;
+    height: auto;
+    z-index: 3;
+}
+.you img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: grab;
+    pointer-events: none;
+    rotate: 12deg;
+}
+.hire{
+    position: absolute;
+    pointer-events: none;
+    margin-top: 26vw;
+    margin-left: 25vw;
+    rotate: -6.6deg;
+    width: 69%;
+    height: auto;
+    z-index: 3;
+}
+.hire img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: grab;
+    pointer-events: none;
+    rotate: 8deg;
+}
