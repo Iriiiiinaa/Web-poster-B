@@ -7,60 +7,56 @@ document.addEventListener('DOMContentLoaded', () => {
     let newX = 0, newY = 0;
     let isMouseDown = false;
 
-    // Default drawing settings (you can modify these with UI controls)
-    let lineColor = 'black';  // Default drawing color
-    let lineWidth = 5;       // Default line width
+    let lineColor = 'black';
+    let lineWidth = 5;
 
-    // Apply initial drawing settings
     drawContext.strokeStyle = lineColor;
     drawContext.lineWidth = lineWidth;
 
     const stopDrawing = () => {
-        isMouseDown = false;
+      isMouseDown = false;
     };
 
     const startDrawing = event => {
-        isMouseDown = true;
-        setPosition(event);
-        x = newX;
-        y = newY;
-        drawContext.beginPath();
-        drawContext.moveTo(x, y);
+      isMouseDown = true;
+      setPosition(event);
+      x = newX;
+      y = newY;
+      drawContext.beginPath();
+      drawContext.moveTo(x, y);
     };
 
     const drawLine = event => {
-        if (isMouseDown) {
-            setPosition(event);
-            drawContext.lineTo(newX, newY);
-            drawContext.stroke();
-            x = newX;
-            y = newY;
-        }
+      if (isMouseDown) {
+        setPosition(event);
+        drawContext.lineTo(newX, newY);
+        drawContext.stroke();
+        x = newX;
+        y = newY;
+      }
     };
 
     const setPosition = event => {
-        let rect = paintCanvas.getBoundingClientRect();
-        if (event.touches) {
-            newX = event.touches[0].clientX - rect.left;
-            newY = event.touches[0].clientY - rect.top;
-        } else {
-            newX = event.clientX - rect.left;
-            newY = event.clientY - rect.top;
-        }
+      const rect = paintCanvas.getBoundingClientRect();
+      if (event.touches) {
+        newX = event.touches[0].clientX - rect.left;
+        newY = event.touches[0].clientY - rect.top;
+      } else {
+        newX = event.clientX - rect.left;
+        newY = event.clientY - rect.top;
+      }
     };
 
     const resizeCanvas = () => {
-        const drawContainer = document.querySelector('.draw');
-        const containerWidth = drawContainer.offsetWidth;
-        const containerHeight = drawContainer.offsetHeight;
+      const drawContainer = document.querySelector('.draw');
+      const containerWidth = drawContainer.offsetWidth;
+      const containerHeight = drawContainer.offsetHeight;
 
-        paintCanvas.width = containerWidth;
-        paintCanvas.height = containerHeight;
-
-        // Re-apply drawing settings after resize
-        drawContext.lineCap = 'round';
-        drawContext.strokeStyle = lineColor;  // Re-apply color
-        drawContext.lineWidth = lineWidth;    // Re-apply line width
+      paintCanvas.width = containerWidth;
+      paintCanvas.height = containerHeight;
+      drawContext.lineCap = 'round';
+      drawContext.strokeStyle = lineColor;
+      drawContext.lineWidth = lineWidth;
     };
 
     paintCanvas.addEventListener('mousedown', startDrawing);
@@ -79,22 +75,20 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('load', resizeCanvas);
     window.addEventListener('resize', resizeCanvas);
 
-    //--- ADDED: Functions to change color and size ---
+    const lineWidthSlider = document.querySelector('.js-line-range');
 
-    // Example: Change the color
-    function changeColor(newColor) {
-        lineColor = newColor;
-        drawContext.strokeStyle = lineColor;
-    }
+    lineWidthSlider.addEventListener('input', () => {
+      lineWidth = parseInt(lineWidthSlider.value, 10);
+      drawContext.lineWidth = lineWidth;
+    });
 
-    // Example: Change the line width
-    function changeLineWidth(newWidth) {
-        lineWidth = newWidth;
-        drawContext.lineWidth = lineWidth;
-    }
+    const colorPicker = document.querySelector('.js-color-picker');
 
-    // You can call these functions from button clicks or other UI events:
-    // Example:
-    // document.getElementById('redButton').addEventListener('click', () => changeColor('red'));
-    // document.getElementById('thickButton').addEventListener('click', () => changeLineWidth(10));
-});
+    colorPicker.addEventListener('change', event => {
+      drawContext.strokeStyle = event.target.value;
+      lineColor = event.target.value; // Update lineColor variable
+    });
+
+    drawContext.strokeStyle = colorPicker.value;
+
+  });

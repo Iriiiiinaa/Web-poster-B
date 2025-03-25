@@ -1040,19 +1040,48 @@ body{
     overflow: hidden;  
 }
 
-.js-paint {
+.containerr {
+    position: absolute;
+    margin-top: 10vw;
+    margin-left: 16.7vw;
+    width: 83.3vw;
+    height: 43vw;
+    overflow: hidden;
+  }
+  
+  .js-paint {
     position: absolute;
     top: 0;
     left: 0;
     z-index: 3;
     pointer-events: auto;
-}
+  }
   
+  .controls {
+    position: relative;
+    margin-top: 10px;
+    background-color: #0776fe;
+    z-index: 4;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .js-color-picker {
+    margin-right: 10px;
+    width: 50px; /* Adjust as needed */
+    height: 30px; /* Adjust as needed */
+  }
+  
+  .js-line-range {
+    width: 20vw;
+    z-index: 4;
+  }
 .square21{
     position: absolute;
     width: 9vw;
     height: 2.4vw;
-    margin-top: 3.5vw;
+    margin-top: 6vw;
     margin-left: 4.35vw;
     z-index: 6;
 }
