@@ -942,7 +942,6 @@ body{
     user-select: none;
     /* pointer-events: none; <- УДАЛИТЕ ЭТУ СТРОКУ */
 }
-
 .building2{
     position: absolute;
     margin-top: 45vw;
@@ -995,24 +994,129 @@ body{
     height: 100%;
     object-fit: cover;
 }
+.grabbing {
+    cursor: grabbing !important;
+}
 .clone {
     position: absolute;
     pointer-events: none;
-    z-index: 1000;
+    z-index: 10;
+    object-fit: cover;
+}
+.clone1 {
     width: 21.5%;
 }
-
-.grabbing {
-    cursor: grabbing !important;
-  }
+.clone2 {
+    width: 16%;
+}
+.clone3 {
+    width: 9%;
+}
+.clone4 {
+    width: 11.4%;
+}
+.clone5 {
+    width: 10.6%;
+}
+  
 /*section 4*/
+.draw {
+    position: absolute;
+    margin-top: 10vw;
+    margin-left: 16.7vw;
+    width: 100vw;
+    height: 43vw;
+    z-index: 2;
+    
+}
+.containerr {
+    position: absolute;
+    opacity: 80%;
+    margin-top: 10vw;
+    margin-left: 16.7vw;
+    width: 100vw;
+    height: 43vw;
+    z-index: 2;
+    overflow: hidden;
+}
+.js-paint {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    pointer-events: auto;
+}
+.color-picker {
+    position: absolute;
+    margin-top: 7vw; 
+    margin-left: 4.35vw;
+    width: 11.1vw;
+    height: 2.7vw;
+    background-color: #FE6807;
+    border: 0.115vw solid #323144;
+    z-index: 5;
+    overflow: hidden;
+}
+.custom-color-picker{
+    position: absolute;
+    width: 13vw;
+    height: 5vw;
+    margin-top: -1vw;
+    margin-left: -1vw;
+}
+.size-picker {
+    position: absolute;
+    margin-top: 11vw; 
+    margin-left: 4.3vw;
+    width: 15vw;
+    height: 6vw;
+    z-index: 5;
+    overflow: hidden;
+    color:#323144;
+}
+.custom-size-range{
+    position: absolute;
+    margin-top: -2.3vw;
+    width: 11vw;
+    height: 6vw;
+    z-index: 5;
+    background-color: #FE6807;
+    color:#323144;
+}
+/* Для Chrome, Safari, Edge */
+input[type="range"]::-webkit-slider-runnable-track {
+    background: #FE6807;
+    height: 0.5vw; /* Настройте высоту по вашему желанию */
+  }
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    margin-top: -0.2vw; /*  Скорректируйте margin, если нужно */
+    color: #FE6807;
+  }
+  
+.square21{
+    position: absolute;
+    width: 9vw;
+    height: 2.4vw;
+    margin-top: 3.5vw;
+    margin-left: 4.35vw;
+    z-index: 6;
+}
+.box37{
+    position: absolute;
+    width: 1.9vw;
+    height: 1.9vw;
+    background-color: #FE6807;
+    border: 0.115vw solid #323144;
+    margin-left: 101%;
+}
 .buttun3{
     position: absolute;
     margin-top: 6.6vw;
     margin-left: 89.64vw;
     width: 8vw;
     height: 2.7vw;
-    z-index: 2;
+    z-index: 3;
 }
 .button_backkk{
     position: absolute;
@@ -1058,7 +1162,7 @@ body{
     font-size: 1.7vw;
     font-family: "Arimo-Bold";
     height: 2.15vw;
-    z-index: 2;
+    z-index: 3;
     color:#FE6807;
 }
 .box35{
@@ -1067,7 +1171,7 @@ body{
     height: 52.9vw;
     margin-top: 2.8vw;
     margin-left: 3vw;
-    z-index: 3;
+    z-index: 4;
     background-color: #323144;;
 }
 .square12{
@@ -1084,7 +1188,7 @@ body{
     height: 2.4vw;
     margin-top: 7.3vw;
     margin-left: 12.9vw;
-    z-index: 2;
+    z-index: 3;
     rotate: -90deg;
 }
 .square14{
@@ -1105,7 +1209,7 @@ body{
     height: 2.15vw;
     color:#FE6807;
     line-height: 1.2vw;
-    z-index: 2;
+    z-index: 3;
 }
 .square15{
     position: absolute;
@@ -1114,7 +1218,7 @@ body{
     margin-top: 51.7vw;
     margin-left: 92.15vw;
     rotate: 90deg;
-    z-index: 2;
+    z-index: 3;
 }
 
 /* section5*/

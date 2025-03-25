@@ -7,7 +7,7 @@ const boxxx = document.querySelector('.boxxx');
 
 boxx.addEventListener('click', () => {
   const isHidden = laptop.style.border === 'none'; 
-  laptop.style.border = isHidden ? '2px solid black' : 'none';
+  laptop.style.border = isHidden ? '0.115vwx solid black' : 'none';
   memImage.style.display = isHidden ? 'block' : 'none';
 });
 boxxx.addEventListener('click', () => {
@@ -22,7 +22,7 @@ const boxxx1 = document.querySelector('.boxxx1');
 
 boxx1.addEventListener('click', () => {
   const isHidden = laptop1.style.border === 'none';
-  laptop1.style.border = isHidden ? '2px solid black' : 'none';
+  laptop1.style.border = isHidden ? '0.115vw solid black' : 'none';
   memImage1.style.display = isHidden ? 'block' : 'none';
 });
 boxxx1.addEventListener('click', () => {
@@ -37,7 +37,7 @@ const boxxx2 = document.querySelector('.boxxx2');
 
 boxx2.addEventListener('click', () => {
   const isHidden = laptop2.style.border === 'none';
-  laptop2.style.border = isHidden ? '2px solid black' : 'none';
+  laptop2.style.border = isHidden ? '0.115vw solid black' : 'none';
   memImage2.style.display = isHidden ? 'block' : 'none';
 });
 boxxx2.addEventListener('click', () => {
@@ -52,7 +52,7 @@ const boxxx3 = document.querySelector('.boxxx3');
 
 boxx3.addEventListener('click', () => {
   const isHidden = laptop3.style.border === 'none';
-  laptop3.style.border = isHidden ? '2px solid black' : 'none';
+  laptop3.style.border = isHidden ? '0.115vw solid black' : 'none';
   memImage3.style.display = isHidden ? 'block' : 'none';
 });
 boxxx3.addEventListener('click', () => {
@@ -67,7 +67,7 @@ const boxxx4 = document.querySelector('.boxxx4');
 
 boxx4.addEventListener('click', () => {
   const isHidden = laptop4.style.border === 'none';
-  laptop4.style.border = isHidden ? '2px solid black' : 'none';
+  laptop4.style.border = isHidden ? '0.115vw solid black' : 'none';
   memImage4.style.display = isHidden ? 'block' : 'none';
 });
 boxxx4.addEventListener('click', () => {
@@ -82,7 +82,7 @@ const boxxx5 = document.querySelector('.boxxx5');
 
 boxx5.addEventListener('click', () => {
   const isHidden = laptop5.style.border === 'none';
-  laptop5.style.border = isHidden ? '2px solid black' : 'none';
+  laptop5.style.border = isHidden ? '0.115vw solid black' : 'none';
   memImage5.style.display = isHidden ? 'block' : 'none';
 });
 boxxx5.addEventListener('click', () => {
@@ -97,7 +97,7 @@ const boxxx6 = document.querySelector('.boxxx6');
 
 boxx6.addEventListener('click', () => {
   const isHidden = laptop6.style.border === 'none';
-  laptop6.style.border = isHidden ? '2px solid black' : 'none';
+  laptop6.style.border = isHidden ? '0.115vw solid black' : 'none';
   memImage6.style.display = isHidden ? 'block' : 'none';
 });
 boxxx6.addEventListener('click', () => {
@@ -110,9 +110,9 @@ const memImage7 = document.querySelector('.mem7 img');
 const boxx7 = document.querySelector('.boxx7');
 const boxxx7 = document.querySelector('.boxxx7');
 
-boxx6.addEventListener('click', () => {
+boxx7.addEventListener('click', () => {
   const isHidden = laptop7.style.border === 'none';
-  laptop7.style.border = isHidden ? '2px solid black' : 'none';
+  laptop7.style.border = isHidden ? '0.115vw solid black' : 'none';
   memImage7.style.display = isHidden ? 'block' : 'none';
 });
 boxxx7.addEventListener('click', () => {
