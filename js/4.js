@@ -91,5 +91,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     lineColor = colorPicker.value;
     drawContext.strokeStyle = colorPicker.value;
+    lineWidth = lineWidthSlider.value;
+    drawContext.lineWidth = lineWidth;
 
   });

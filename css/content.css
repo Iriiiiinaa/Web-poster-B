@@ -1022,13 +1022,11 @@ body{
 /*section 4*/
 .draw {
     position: absolute;
-    background-color: #0776fe;
-    opacity: 50%;
+    opacity: 80%;
     width: 100%;
     height: 100%;
     z-index: 2;
     box-sizing: border-box; /* Add this line */
-
 }
 
 .containerr {
@@ -1055,33 +1053,43 @@ body{
     left: 0;
     z-index: 3;
     pointer-events: auto;
+      width: 100%;
+      height: 100%;
   }
   
-  .controls {
-    position: relative;
-    margin-top: 10px;
-    background-color: #0776fe;
+.controls {
+    position:absolute;
+    margin-top: 8.7vw;
+    margin-left: 4.45vw;
+    width: 11vw;
+    height: 3vw;
+    z-index: 5;
+    overflow: hidden;
+}
+.js-color-picker {
+    margin-top: -1vw;
+    margin-left: -1vw;
+    width: 13vw;
+    height: 6vw; 
+}
+.controls1 {
+    position:absolute;
+    margin-top: 11.5vw;
+    margin-left: 4.45vw;
+    width: 11vw;
+    height: 3vw;
+    z-index: 6;
+}
+.js-line-range {
+    width: 11vw;
+    height: 3vw;
     z-index: 4;
-    display: flex;
-    align-items: center;
-    padding: 10px;
-  }
-  
-  .js-color-picker {
-    margin-right: 10px;
-    width: 50px; /* Adjust as needed */
-    height: 30px; /* Adjust as needed */
-  }
-  
-  .js-line-range {
-    width: 20vw;
-    z-index: 4;
-  }
+}
 .square21{
     position: absolute;
     width: 9vw;
     height: 2.4vw;
-    margin-top: 6vw;
+    margin-top: 5vw;
     margin-left: 4.35vw;
     z-index: 6;
 }
