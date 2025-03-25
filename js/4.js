@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let newX = 0, newY = 0;
     let isMouseDown = false;
 
-    let lineColor = 'black';
+    let lineColor = '#FE6807'; // Reddish-orange
     let lineWidth = 5;
 
     drawContext.strokeStyle = lineColor;
@@ -89,6 +89,7 @@ document.addEventListener('DOMContentLoaded', () => {
       lineColor = event.target.value; // Update lineColor variable
     });
 
+    lineColor = colorPicker.value;
     drawContext.strokeStyle = colorPicker.value;
 
   });
