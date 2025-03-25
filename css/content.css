@@ -586,15 +586,27 @@ body{
     color:#323144;
     line-height: 1.2vw;
 }
-.yu{
-    position: absolute;
-    width: 30vw;
-    height: 20vw;
-    border: 0.115vw solid #323144;
+/*.conteinee { /* Corrected class name */
+    /*position: absolute;
+    width: 28.6vw;
+    height: 5.05vw;  /* Original height - drawing will be limited */
+    /*border: 0.115vw solid #323144;
     margin-left: 17.8vw;
-    margin-top: 21.6vw;
+    margin-top: 21.5vw;
     cursor: crosshair;
-}
+    overflow: hidden; /* Keep drawing inside */
+    /*box-sizing: border-box; /* Important for accurate sizing */
+/*}
+
+.js-paintt {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    pointer-events: auto;
+    width: 100%;
+    height: 100%;
+}*/
 .text1conteiner {
     position: absolute;
     margin-top: 5vw;
@@ -1084,6 +1096,157 @@ body{
     width: 11vw;
     height: 3vw;
     z-index: 4;
+}
+.sticker1{
+    position: absolute;
+    margin-top: 13.8vw;
+    margin-left: 3.5vw;
+    width: 9%;
+    height: auto;
+    z-index: 5;
+}
+.sticker1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: grab;
+    pointer-events: none;
+}
+.sticker11{
+    position: absolute;
+    margin-top: 13.8vw;
+    margin-left: 3.5vw;
+    pointer-events: none;
+    width: 9%;
+    height: auto;
+    z-index: 4;
+}
+.sticker11 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: grab;
+    pointer-events: none;
+}
+.sticker2{
+    position: absolute;
+    margin-top: 22.5vw;
+    margin-left: 11vw;
+    width: 5.6%;
+    height: auto;
+    z-index: 5;
+}
+.sticker2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: grab;
+    pointer-events: none;
+}
+.sticker22{
+    position: absolute;
+    margin-top: 22.5vw;
+    margin-left: 11vw;
+    width: 5.6%;
+    height: auto;
+    z-index: 4;
+}
+.sticker22 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: grab;
+    pointer-events: none;
+}
+.sticker3{
+    position: absolute;
+    margin-top: 26vw;
+    margin-left: 3.3vw;
+    width: 9%;
+    height: auto;
+    z-index: 5;
+}
+.sticker3 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: grab;
+    pointer-events: none;
+}
+.sticker33{
+    position: absolute;
+    margin-top: 26vw;
+    margin-left: 3.3vw;
+    width: 9%;
+    height: auto;
+    z-index: 4;
+}
+.sticker33 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: grab;
+    pointer-events: none;
+}
+.sticker4{
+    position: absolute;
+    margin-top: 38vw;
+    margin-left: 6.7vw;
+    width: 10%;
+    height: auto;
+    z-index: 5;
+}
+.sticker4 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: grab;
+    pointer-events: none;
+}
+.sticker44{
+    position: absolute;
+    margin-top: 38vw;
+    margin-left: 6.7vw;
+    width: 10%;
+    height: auto;
+    z-index: 4;
+}
+.sticker44 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: grab;
+    pointer-events: none;
+}
+.sticker5{
+    position: absolute;
+    margin-top: 48.5vw;
+    margin-left: 3.2vw;
+    width: 13.6%;
+    height: auto;
+    z-index: 5;
+}
+.sticker5 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: grab;
+    pointer-events: none;
+}
+.sticker55{
+    position: absolute;
+    margin-top: 48.5vw;
+    margin-left: 3.2vw;
+    width: 13.6%;
+    height: auto;
+    z-index: 4;
+}
+.sticker55 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: grab;
+    pointer-events: none;
 }
 .square21{
     position: absolute;
