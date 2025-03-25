@@ -1,112 +1,100 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // The JavaScript code you provided (modified above) goes here
     const paintCanvas = document.querySelector('.js-paint');
-    const drawArea = document.querySelector('.draw');
-    const ctx = paintCanvas.getContext('2d');
-    const colorPicker = document.querySelector('.js-color-picker');
-    const lineWidthRange = document.querySelector('.js-line-range');
-    const lineWidthLabel = document.querySelector('.js-range-value');
-    const customColorPicker = document.querySelector('.custom-color-picker');
-    const customSizeRange = document.querySelector('.custom-size-range');
-    const customSizeValue = document.querySelector('.custom-range-value');
-    const colorPickerDiv = document.querySelector('.color-picker');
-    
+    const drawContext = paintCanvas.getContext('2d');
+    drawContext.lineCap = 'round';
+
     let x = 0, y = 0;
-    let isDrawing = false;
-    let lastX = 0, lastY = 0; // Store the last position for smooth lines
-    
-    // Устанавливаем цвет и толщину линии по умолчанию
-    ctx.lineCap = 'round';
-    ctx.strokeStyle = colorPicker.value;
-    ctx.lineWidth = lineWidthRange.value;
-    lineWidthLabel.innerText = lineWidthRange.value;
-    
-    // Функции для рисования
-    function startDrawing(e) {
-        isDrawing = true;
-        setPosition(e);
-        lastX = x; // Initialize last position
-        lastY = y;
-    }
-    
-    function stopDrawing() {
-        isDrawing = false;
-    }
-    
-    function draw(e) {
-        if (!isDrawing) return;
-    
-        setPosition(e);
-    
-        ctx.beginPath();
-        ctx.moveTo(lastX, lastY);
-        ctx.lineTo(x, y);
-        ctx.stroke();
-    
-        lastX = x; // Update last position for next line segment
-        lastY = y;
-    }
-    
-    function setPosition(e) {
-        x = e.offsetX;
-        y = e.offsetY;
-    }
-    
-    function changeColor() {
-        ctx.strokeStyle = colorPicker.value;
-    }
-    // Function to change color with custom color picker
-    function changeCustomColor() {
-        ctx.strokeStyle = customColorPicker.value;
-    }
-    
-    function changeLineWidth() {
-        lineWidthLabel.innerText = lineWidthRange.value;
-        ctx.lineWidth = lineWidthRange.value;
-    }
-    // Function to change size with custom size range
-    function changeCustomLineWidth() {
-        const widthVW = customSizeRange.value + 'vw';
-        customSizeValue.innerText = widthVW;
-        ctx.lineWidth = parseFloat(customSizeRange.value) * (drawArea.offsetWidth / 100); // convert vw to pixels
-    }
-    
-    function resizeCanvas() {
-        // Обновляем размеры холста, используя vw
-        paintCanvas.width = drawArea.offsetWidth;
-        paintCanvas.height = drawArea.offsetHeight;
-    
-        // Снова устанавливаем параметры рисования после изменения размеров.
-        ctx.lineCap = 'round';
-        ctx.strokeStyle = colorPicker.value;
-        ctx.lineWidth = lineWidthRange.value;
-        lineWidthLabel.innerText = lineWidthRange.value;
-         // convert vw to pixels
-        customSizeValue.innerText = customSizeRange.value + 'vw';
-        ctx.lineWidth = parseFloat(customSizeRange.value) * (drawArea.offsetWidth / 100);
-    }
-    function changeColorPickerDivSize(newSize) {
-        colorPickerDiv.style.width = newSize + 'vw';
-        colorPickerDiv.style.height = newSize + 'vw';
-    }
-    
-    // Обработчики событий
+    let newX = 0, newY = 0;
+    let isMouseDown = false;
+
+    // Default drawing settings (you can modify these with UI controls)
+    let lineColor = 'black';  // Default drawing color
+    let lineWidth = 5;       // Default line width
+
+    // Apply initial drawing settings
+    drawContext.strokeStyle = lineColor;
+    drawContext.lineWidth = lineWidth;
+
+    const stopDrawing = () => {
+        isMouseDown = false;
+    };
+
+    const startDrawing = event => {
+        isMouseDown = true;
+        setPosition(event);
+        x = newX;
+        y = newY;
+        drawContext.beginPath();
+        drawContext.moveTo(x, y);
+    };
+
+    const drawLine = event => {
+        if (isMouseDown) {
+            setPosition(event);
+            drawContext.lineTo(newX, newY);
+            drawContext.stroke();
+            x = newX;
+            y = newY;
+        }
+    };
+
+    const setPosition = event => {
+        let rect = paintCanvas.getBoundingClientRect();
+        if (event.touches) {
+            newX = event.touches[0].clientX - rect.left;
+            newY = event.touches[0].clientY - rect.top;
+        } else {
+            newX = event.clientX - rect.left;
+            newY = event.clientY - rect.top;
+        }
+    };
+
+    const resizeCanvas = () => {
+        const drawContainer = document.querySelector('.draw');
+        const containerWidth = drawContainer.offsetWidth;
+        const containerHeight = drawContainer.offsetHeight;
+
+        paintCanvas.width = containerWidth;
+        paintCanvas.height = containerHeight;
+
+        // Re-apply drawing settings after resize
+        drawContext.lineCap = 'round';
+        drawContext.strokeStyle = lineColor;  // Re-apply color
+        drawContext.lineWidth = lineWidth;    // Re-apply line width
+    };
+
     paintCanvas.addEventListener('mousedown', startDrawing);
+    paintCanvas.addEventListener('mousemove', drawLine);
     paintCanvas.addEventListener('mouseup', stopDrawing);
     paintCanvas.addEventListener('mouseout', stopDrawing);
-    paintCanvas.addEventListener('mousemove', draw);
-    
+
     paintCanvas.addEventListener('touchstart', startDrawing);
+    paintCanvas.addEventListener('touchmove', drawLine);
     paintCanvas.addEventListener('touchend', stopDrawing);
     paintCanvas.addEventListener('touchcancel', stopDrawing);
-    paintCanvas.addEventListener('touchmove', draw);
+
+    paintCanvas.addEventListener('touchstart', e => e.preventDefault());
     paintCanvas.addEventListener('touchmove', e => e.preventDefault());
-    
-    colorPicker.addEventListener('input', changeColor);
-    lineWidthRange.addEventListener('input', changeLineWidth);
-    customColorPicker.addEventListener('input', changeCustomColor);
-    customSizeRange.addEventListener('input',changeCustomLineWidth);
-    
+
     window.addEventListener('load', resizeCanvas);
     window.addEventListener('resize', resizeCanvas);
-}) 
+
+    //--- ADDED: Functions to change color and size ---
+
+    // Example: Change the color
+    function changeColor(newColor) {
+        lineColor = newColor;
+        drawContext.strokeStyle = lineColor;
+    }
+
+    // Example: Change the line width
+    function changeLineWidth(newWidth) {
+        lineWidth = newWidth;
+        drawContext.lineWidth = lineWidth;
+    }
+
+    // You can call these functions from button clicks or other UI events:
+    // Example:
+    // document.getElementById('redButton').addEventListener('click', () => changeColor('red'));
+    // document.getElementById('thickButton').addEventListener('click', () => changeLineWidth(10));
+});

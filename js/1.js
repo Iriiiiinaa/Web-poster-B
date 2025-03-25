@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     
       // загрузка страницы
-      showSection('section1');
+      showSection('section4');
 
 
 
