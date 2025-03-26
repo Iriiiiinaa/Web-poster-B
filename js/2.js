@@ -1,67 +1,96 @@
 document.addEventListener('DOMContentLoaded', () => {
-
-    const paintCanvas = document.querySelector('.js-paintt');
+    const paintCanvas = document.querySelector('.pain');
     const drawContext = paintCanvas.getContext('2d');
+
+    console.log('Контекст рисования:', drawContext);
+
+    if (!drawContext) {
+        console.error('Не удалось получить контекст рисования!');
+        return;
+    }
+
     drawContext.lineCap = 'round';
 
     let x = 0, y = 0;
-    let newX = 0, newY = 0;
     let isMouseDown = false;
 
-    // Default drawing settings (you can modify these with UI controls)
-    let lineColor = 'black';  // Default drawing color
-    let lineWidth = 2;       // Default line width
+    const defaultColor = '#000000';
+    const defaultLineWidth = 3;
 
-    // Apply initial drawing settings
-    drawContext.strokeStyle = lineColor;
-    drawContext.lineWidth = lineWidth;
+    drawContext.strokeStyle = defaultColor;
+    drawContext.lineWidth = defaultLineWidth;
 
     const stopDrawing = () => {
         isMouseDown = false;
     };
-
     const startDrawing = event => {
         isMouseDown = true;
-        setPosition(event);
-        x = newX;
-        y = newY;
-        drawContext.beginPath();
-        drawContext.moveTo(x, y);
+        console.log('isMouseDown (start):', isMouseDown);
+        [x, y] = [event.offsetX, event.offsetY];
+        console.log('x:', x, 'y:', y, 'event.offsetX:', event.offsetX, 'event.offsetY:', event.offsetY);
     };
 
     const drawLine = event => {
         if (isMouseDown) {
-            setPosition(event);
+            const newX = event.offsetX;
+            const newY = event.offsetY;
+            console.log('x:', x, 'y:', y, 'event.offsetX:', event.offsetX, 'event.offsetY:', event.offsetY);
+
+            drawContext.beginPath();
+            drawContext.moveTo(x, y);
             drawContext.lineTo(newX, newY);
             drawContext.stroke();
-            x = newX;
-            y = newY;
+            [x, y] = [newX, newY];
         }
     };
 
-    const setPosition = event => {
-        let rect = paintCanvas.getBoundingClientRect();
-        if (event.touches) {
-            newX = event.touches[0].clientX - rect.left;
-            newY = event.touches[0].clientY - rect.top;
-        } else {
-            newX = event.clientX - rect.left;
-            newY = event.clientY - rect.top;
+    const startDrawingTouch = event => {
+        const rect = paintCanvas.getBoundingClientRect();
+        isMouseDown = true;
+        console.log('isMouseDown (touch start):', isMouseDown);
+        [x, y] = [event.touches[0].clientX - rect.left, event.touches[0].clientY - rect.top];
+    };
+
+    const drawLineTouch = event => {
+        if (isMouseDown) {
+            const rect = paintCanvas.getBoundingClientRect();
+            const newX = event.touches[0].clientX - rect.left;
+            const newY = event.touches[0].clientY - rect.top;
+            drawContext.beginPath();
+            drawContext.moveTo(x, y);
+            drawContext.lineTo(newX, newY);
+            drawContext.stroke();
+            [x, y] = [newX, newY];
         }
     };
+
+    const stopDrawingTouch = () => {
+        isMouseDown = false;
+    };
+
+    let canvasInitialized = false; // Флаг для отслеживания инициализации
 
     const resizeCanvas = () => {
-        const drawContainer = document.querySelector('.draw');
-        const containerWidth = drawContainer.offsetWidth;
-        const containerHeight = drawContainer.offsetHeight;
+        const containerWidth = paintCanvas.parentElement.offsetWidth;
+        const containerHeight = paintCanvas.parentElement.offsetHeight;
 
         paintCanvas.width = containerWidth;
         paintCanvas.height = containerHeight;
+        console.log('Ширина канвы:', paintCanvas.width, 'Высота канвы:', paintCanvas.height);
 
-        // Re-apply drawing settings after resize
         drawContext.lineCap = 'round';
-        drawContext.strokeStyle = lineColor;  // Re-apply color
-        drawContext.lineWidth = lineWidth;    // Re-apply line width
+        drawContext.strokeStyle = defaultColor;
+        drawContext.lineWidth = defaultLineWidth;
+        console.log('Цвет линии:', drawContext.strokeStyle, 'Толщина линии:', drawContext.lineWidth);
+    };
+
+    const initCanvas = () => {
+         if (canvasInitialized) return; // Предотвращаем повторную инициализацию
+
+        requestAnimationFrame(() => {
+            resizeCanvas();
+            canvasInitialized = true; // Устанавливаем флаг
+        });
     };
 
     paintCanvas.addEventListener('mousedown', startDrawing);
@@ -69,25 +98,11 @@ document.addEventListener('DOMContentLoaded', () => {
     paintCanvas.addEventListener('mouseup', stopDrawing);
     paintCanvas.addEventListener('mouseout', stopDrawing);
 
-    paintCanvas.addEventListener('touchstart', startDrawing);
-    paintCanvas.addEventListener('touchmove', drawLine);
-    paintCanvas.addEventListener('touchend', stopDrawing);
-    paintCanvas.addEventListener('touchcancel', stopDrawing);
+    paintCanvas.addEventListener('touchstart', startDrawingTouch);
+    paintCanvas.addEventListener('touchmove', drawLineTouch);
+    paintCanvas.addEventListener('touchend', stopDrawingTouch);
+    paintCanvas.addEventListener('touchcancel', stopDrawingTouch);
 
-    paintCanvas.addEventListener('touchstart', e => e.preventDefault());
-    paintCanvas.addEventListener('touchmove', e => e.preventDefault());
-
-    window.addEventListener('load', resizeCanvas);
+    window.addEventListener('load', initCanvas);
     window.addEventListener('resize', resizeCanvas);
-
-    function changeColor(newColor) {
-        lineColor = newColor;
-        drawContext.strokeStyle = lineColor;
-    }
-
-    // Example: Change the line width
-    function changeLineWidth(newWidth) {
-        lineWidth = newWidth;
-        drawContext.lineWidth = lineWidth;
-    }
-})
+});

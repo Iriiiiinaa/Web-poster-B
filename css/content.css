@@ -699,6 +699,24 @@ body{
 .text4conteiner:hover {
     cursor: text;
 }
+.oblact {
+    width: 28.6vw;
+    height: 5.05vw;
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    cursor: crosshair;
+    z-index: 6;
+}
+
+.pain {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 6;
+}
 .box23{
     position: absolute;
     width: 10vw;
@@ -1048,25 +1066,16 @@ body{
     width: 83.3vw;
     height: 43vw;
     overflow: hidden;  
-}
-
-.containerr {
-    position: absolute;
-    margin-top: 10vw;
-    margin-left: 16.7vw;
-    width: 83.3vw;
-    height: 43vw;
-    overflow: hidden;
-  }
-  
+    cursor: crosshair;
+} 
   .js-paint {
     position: absolute;
     top: 0;
     left: 0;
     z-index: 3;
     pointer-events: auto;
-      width: 100%;
-      height: 100%;
+    width: 100%;
+    height: 100%;
   }
   
 .controls {
