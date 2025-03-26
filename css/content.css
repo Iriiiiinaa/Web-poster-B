@@ -230,6 +230,7 @@ body{
     height: 2vw;
     color:#323144;
 }
+
 .chek{
     position: absolute;
     margin-top: 4vw;
@@ -586,27 +587,6 @@ body{
     color:#323144;
     line-height: 1.2vw;
 }
-/*.conteinee { /* Corrected class name */
-    /*position: absolute;
-    width: 28.6vw;
-    height: 5.05vw;  /* Original height - drawing will be limited */
-    /*border: 0.115vw solid #323144;
-    margin-left: 17.8vw;
-    margin-top: 21.5vw;
-    cursor: crosshair;
-    overflow: hidden; /* Keep drawing inside */
-    /*box-sizing: border-box; /* Important for accurate sizing */
-/*}
-
-.js-paintt {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 3;
-    pointer-events: auto;
-    width: 100%;
-    height: 100%;
-}*/
 .text1conteiner {
     position: absolute;
     margin-top: 5vw;
@@ -706,15 +686,6 @@ body{
     background-color: #fff;
     border: 1px solid #ccc;
     cursor: crosshair;
-    z-index: 6;
-}
-
-.pain {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
     z-index: 6;
 }
 .box23{
@@ -1068,7 +1039,7 @@ body{
     overflow: hidden;  
     cursor: crosshair;
 } 
-  .js-paint {
+#canvas2{
     position: absolute;
     top: 0;
     left: 0;
